@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -28,7 +27,6 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Error",
@@ -38,16 +36,13 @@ const ContactSection = () => {
       return;
     }
 
-    // In a real application, you would send the form data to a server
     console.log("Form submitted:", formData);
 
-    // Show success message
     toast({
       title: "Message Sent",
       description: "Thank you for contacting us. We will respond shortly.",
     });
 
-    // Reset form
     setFormData({
       name: "",
       email: "",
@@ -57,64 +52,64 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-900 text-white">
-      <div className="container max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+    <section id="contact" className="py-24 bg-gray-900 text-white text-lg">
+      <div className="container max-w-7xl mx-auto px-6">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6">Contact Us</h2>
+          <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Have questions about our services or need personalized investment advice?
             Our team is ready to assist you.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <Card className="bg-gray-800 border-gray-700 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-6 text-white">Get In Touch</h3>
-            <p className="mb-8 text-gray-300">
+        <div className="grid md:grid-cols-2 gap-16">
+          <Card className="bg-gray-800 border-gray-700 p-10 rounded-2xl">
+            <h3 className="text-3xl font-bold mb-8 text-white">Get In Touch</h3>
+            <p className="mb-10 text-gray-300 text-lg">
               Whether you're looking for investment opportunities or need advice on your 
               financial goals, our experienced team is ready to help you navigate the 
               complex world of trading and investments.
             </p>
 
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="bg-primary/20 p-3 rounded-full">
-                  <MapPin className="h-6 w-6 text-primary" />
+            <div className="space-y-8">
+              <div className="flex items-start gap-6">
+                <div className="bg-primary/20 p-4 rounded-full">
+                  <MapPin className="h-8 w-8 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-bold mb-1">Address</h4>
-                  <p className="text-gray-300">123 Finance Street, Trading Center, NY 10001</p>
+                  <h4 className="font-bold mb-2 text-xl">Address</h4>
+                  <p className="text-gray-300 text-lg">123 Finance Street, Trading Center, NY 10001</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="bg-primary/20 p-3 rounded-full">
-                  <Mail className="h-6 w-6 text-primary" />
+              <div className="flex items-start gap-6">
+                <div className="bg-primary/20 p-4 rounded-full">
+                  <Mail className="h-8 w-8 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-bold mb-1">Email</h4>
-                  <p className="text-gray-300">info@sivvg.com</p>
+                  <h4 className="font-bold mb-2 text-xl">Email</h4>
+                  <p className="text-gray-300 text-lg">info@sivvg.com</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="bg-primary/20 p-3 rounded-full">
-                  <Phone className="h-6 w-6 text-primary" />
+              <div className="flex items-start gap-6">
+                <div className="bg-primary/20 p-4 rounded-full">
+                  <Phone className="h-8 w-8 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-bold mb-1">Phone</h4>
-                  <p className="text-gray-300">+1 (555) 123-4567</p>
+                  <h4 className="font-bold mb-2 text-xl">Phone</h4>
+                  <p className="text-gray-300 text-lg">+1 (555) 123-4567</p>
                 </div>
               </div>
             </div>
           </Card>
 
-          <Card className="bg-white text-gray-900 p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <Card className="bg-white text-gray-900 p-10 rounded-2xl shadow-2xl">
+            <h3 className="text-3xl font-bold mb-8">Send Us a Message</h3>
+            <form onSubmit={handleSubmit} className="space-y-8">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
+                <label htmlFor="name" className="block text-lg font-medium mb-3">
                   Your Name *
                 </label>
                 <Input
@@ -123,13 +118,13 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="John Doe"
-                  className="w-full"
+                  className="w-full h-12 px-4 text-lg"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label htmlFor="email" className="block text-lg font-medium mb-3">
                   Email Address *
                 </label>
                 <Input
@@ -139,13 +134,13 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="john@example.com"
-                  className="w-full"
+                  className="w-full h-12 px-4 text-lg"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                <label htmlFor="phone" className="block text-lg font-medium mb-3">
                   Phone Number
                 </label>
                 <Input
@@ -154,12 +149,12 @@ const ContactSection = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="+1 (123) 456-7890"
-                  className="w-full"
+                  className="w-full h-12 px-4 text-lg"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label htmlFor="message" className="block text-lg font-medium mb-3">
                   Your Message *
                 </label>
                 <Textarea
@@ -168,13 +163,13 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="How can we help you?"
-                  rows={4}
-                  className="w-full"
+                  rows={6}
+                  className="w-full px-4 py-3 text-lg"
                   required
                 />
               </div>
 
-              <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
+              <Button type="submit" className="w-full h-12 text-lg bg-primary hover:bg-primary/90">
                 Send Message
               </Button>
             </form>
