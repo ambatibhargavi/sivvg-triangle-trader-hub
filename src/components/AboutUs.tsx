@@ -1,4 +1,3 @@
-
 import { 
   Shield, 
   Users, 
@@ -114,7 +113,7 @@ const AboutUs = () => {
             <div className="relative rounded-lg overflow-hidden shadow-xl transform transition-all duration-500 group-hover:scale-105">
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500/20 to-violet-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
               <img 
-                src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                src="https://i.pinimg.com/736x/76/87/d5/7687d581c201a9f25f759781e7eb2642.jpg" 
                 alt="Trading professionals at SIVVG" 
                 className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-500"
               />
