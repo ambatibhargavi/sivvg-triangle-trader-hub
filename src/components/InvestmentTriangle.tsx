@@ -1,5 +1,5 @@
 
-import { Shield, Banknote, Return } from "lucide-react";
+import { Shield, Banknote, TrendingUp } from "lucide-react";
 
 const InvestmentTriangle = () => {
   return (
@@ -57,7 +57,7 @@ const InvestmentTriangle = () => {
           <div className="absolute right-0 bottom-0 bg-white p-6 rounded-lg shadow-lg max-w-xs w-full">
             <div className="flex flex-col items-center">
               <div className="bg-orange-100 p-3 rounded-full mb-4">
-                <Return className="h-8 w-8 text-orange-600" />
+                <TrendingUp className="h-8 w-8 text-orange-600" />
               </div>
               <h4 className="text-xl font-bold mb-2 text-center">Returns</h4>
               <p className="text-center text-gray-600">
