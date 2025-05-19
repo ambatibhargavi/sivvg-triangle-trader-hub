@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -19,7 +18,7 @@ const Services = () => {
       title: "Market Analysis",
       description: "Comprehensive market analysis and insights to help you make informed trading decisions.",
       icon: <ChartBar className="h-10 w-10 text-amber-500" />,
-      bgImage: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      bgImage: "https://i.pinimg.com/736x/2f/8f/5a/2f8f5ad22789776604e62e11d47d73ea.jpg",
       gradient: "from-amber-500/80 to-amber-600/80",
       features: ["Real-time market data", "Technical analysis", "Trend identification", "Risk assessment"],
     },
@@ -27,7 +26,7 @@ const Services = () => {
       title: "Portfolio Management",
       description: "Professional management of your investment portfolio to optimize returns and minimize risks.",
       icon: <TrendingUp className="h-10 w-10 text-emerald-500" />,
-      bgImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      bgImage: "https://i.pinimg.com/736x/a0/1d/87/a01d8793a6aa5e66eea80dfaf0da26df.jpg",
       gradient: "from-emerald-500/80 to-emerald-600/80",
       features: ["Asset allocation", "Diversification strategies", "Regular rebalancing", "Performance tracking"],
     },
@@ -35,7 +34,7 @@ const Services = () => {
       title: "Trading Advisory",
       description: "Expert advice on trading strategies and opportunities across various financial markets.",
       icon: <DollarSign className="h-10 w-10 text-indigo-500" />,
-      bgImage: "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      bgImage: "https://i.pinimg.com/736x/7a/5c/d1/7a5cd134be322e939a42755c7117dd74.jpg",
       gradient: "from-indigo-500/80 to-indigo-600/80",
       features: ["Personalized recommendations", "Entry/exit strategies", "Risk management", "Market updates"],
     },
@@ -43,7 +42,7 @@ const Services = () => {
       title: "Wealth Management",
       description: "Comprehensive wealth management services to help you achieve your financial goals.",
       icon: <Users className="h-10 w-10 text-purple-500" />,
-      bgImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      bgImage: "https://i.pinimg.com/736x/0f/c8/d8/0fc8d8cbe42b9890a21aa212666582d2.jpg",
       gradient: "from-purple-500/80 to-purple-600/80",
       features: ["Financial planning", "Retirement solutions", "Tax optimization", "Estate planning"],
     },
